@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar bg-dark border-bottom border-body text-light justify-content-center" data-bs-theme="dark">
+        Flask Application
+      </nav>
+      <hr>
+      <div class="container">
+        <button class=" btn btn-dark" data-bs-toggle="collapse" href="#retrieveForm" role="button" aria-expanded="false" aria-controls="retrievedata">
+            Retrieve Data Using name
+        </button>
+        <br>
+        <div class="collapse" id="retrieveForm">
+            <br>
+            <form class="form-group" id="formData">
+                <label for="name">Enter Name</label>
+                <input type="text" name="name" id="name" class="form-control">
+                <br>
+                <button class="btn btn-dark" type="submit">Sumbit</button>
+            </form>
+        </div>
+        
+        <ul class="list-group" id="output"></ul>
+      </div>
+      <hr>
+      
+      <div class="container">
+        <button class=" btn btn-dark" data-bs-toggle="collapse" href="#postCollapse" role="button" aria-expanded="false" aria-controls="postCollapse">
+            Post Data
+        </button>
+        <br>
+        <div class="collapse" id="postCollapse">
+            <br>
+            <form class="form-group" id="postData">
+                <label for="name">Enter Name</label>
+                <input type="text" name="name" id="postName" class="form-control">
+                <label for="name">Enter Genre</label>
+                <input type="text" name="genre" id="postGenre" class="form-control">
+                <label for="name">Enter Game</label>
+                <input type="text" name="game" id="postGame" class="form-control">
+                <br>
+                <button class="btn btn-dark" type="submit">Sumbit</button>
+            </form>
+        </div>
+        <br>
+        <ul class="list-group" id="output"></ul>
+      </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
